@@ -36,8 +36,7 @@ public class RedisTest {
 		}
 	}
 
-//	public static void main(String[] args) throws UnsupportedEncodingException {
-        public static void execute(int threadNo) throws UnsupportedEncodingException {
+        public static synchronized void execute(int threadNo) throws UnsupportedEncodingException {
 		long pCnt = 500000L; //2500000L;
 		int tCnt = 4;
 		Gson gson = new Gson();
